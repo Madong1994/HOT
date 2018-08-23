@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta name="baidu-site-verification" content="NAePnFc3kQ" />
+    <meta name="description" content="大家都关注的才是热点">
+    <meta name="keyword" content="hotSpot,大家都关注的才是热点">
+    <meta charset="UTF-8">
+    <title>hotSpot,大家关注的才是热点</title>
+    <link th:href="@{/css/msmart.css}" href="/static/css/msmart.css" rel="stylesheet"/>
+    <link th:href="@{/css/smart.css}" href="/static/css/smart.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="RootDiv" class=" ms-layout-nowrap-vertical sm-left-border-2px-black sm-right-border-2px-black">
+        <!--导航栏-->
+        <div id="NavDiv" class=" ms-layout-center-horizontal ms-width-100-per ms-height-8-per sm-bottom-border-2px-black">
+
+        </div>
+        <div id="ContentDiv" class=" ms-layout-center-horizontal ms-width-100-per ms-height-92-per ">
+            <!--内容列表-->
+            <div id="NewsDiv" class=" ms-layout-nowrap-vertical ms-width-70-per ms-height-100-per sm-top-border-2px-black sm-right-border-2px-black"></div>
+            <!--聊天框-->
+            <div id="ChatDiv" class=" ms-layout-nowrap-vertical ms-height-60-per ms-width-30-per"></div>
+        </div>
+    </div>
+</body>
+<script src="/static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script src="/static/js/vue/vue.js" th:src="@{/js/vue/vue.js}"></script>
+<script th:src="@{/js/vue/vue-resource.min.js}" src="/static/js/vue/vue-resource.min.js"></script>
+<script th:src="@{/js/init.js}" src="/static/js/init.js"></script>
+<script src="/static/js/index.js" th:src="@{/js/index.js}"></script>
+<script>
+    $().ready(function(){
+        initSize($("#RootDiv"));
+//        initVue()
+    })
+</script>
+</html>
