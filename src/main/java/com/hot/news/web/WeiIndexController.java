@@ -39,4 +39,8 @@ public class WeiIndexController {
         obj.setDatas(testBeens);
         return obj;
     }
+    @RequestMapping("/token")
+    public String createToken() {
+
+    }
 }
